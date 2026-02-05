@@ -27,7 +27,7 @@ export default function Footer() {
                     <div>
                         <h3 className="text-2xl font-heading font-bold mb-4">Kavish Parmar</h3>
                         <p className="text-secondary/80">
-                            Crafting digital experiences that engage and inspire.
+                            A passionate web designer and developer with 5+ years of experience in crafting high-performance, results-driven digital experiences. Specializing in modern web technologies and user-centered design.
                         </p>
                     </div>
 
@@ -36,22 +36,22 @@ export default function Footer() {
                         <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
                         <ul className="space-y-2">
                             <li>
-                                <a href="#home" className="text-secondary/80 hover:text-accent transition-colors">
+                                <a href="/#hero" className="text-secondary/80 hover:text-accent transition-colors">
                                     Home
                                 </a>
                             </li>
                             <li>
-                                <a href="#about" className="text-secondary/80 hover:text-accent transition-colors">
+                                <a href="/#about" className="text-secondary/80 hover:text-accent transition-colors">
                                     About
                                 </a>
                             </li>
                             <li>
-                                <a href="#portfolio" className="text-secondary/80 hover:text-accent transition-colors">
+                                <a href="/#portfolio" className="text-secondary/80 hover:text-accent transition-colors">
                                     Portfolio
                                 </a>
                             </li>
                             <li>
-                                <a href="#contact" className="text-secondary/80 hover:text-accent transition-colors">
+                                <a href="/#contact" className="text-secondary/80 hover:text-accent transition-colors">
                                     Contact
                                 </a>
                             </li>
@@ -61,7 +61,7 @@ export default function Footer() {
                     {/* Contact Info */}
                     <div>
                         <h4 className="text-lg font-semibold mb-4">Get In Touch</h4>
-                        <ul className="space-y-2">
+                        <ul className="space-y-4">
                             <li className="text-secondary/80">
                                 <a
                                     href="https://wa.me/919302492158?text=Hi%20Kavish%21%20I%20visited%20your%20website%20and%20was%20truly%20impressed%20by%20your%20work.%20I%20would%20love%20to%20discuss%20a%20project%20for%20my%20business%2Fmyself."
@@ -80,20 +80,29 @@ export default function Footer() {
                             </li>
                             <li className="text-secondary/80">
                                 <a
-                                    href="mailto:kavishparmar2@gmail.com"
+                                    href="mailto:kavishparmar5@gmail.com"
                                     className="hover:text-accent transition-colors cursor-pointer"
                                     title="Click to Email, Double click to copy"
                                     onDoubleClick={(e) => {
                                         e.preventDefault();
-                                        navigator.clipboard.writeText('kavishparmar2@gmail.com');
+                                        navigator.clipboard.writeText('kavishparmar5@gmail.com');
                                         alert('Email address copied to clipboard!');
                                     }}
                                 >
-                                    kavishparmar2@gmail.com
+                                    kavishparmar5@gmail.com
                                 </a>
                             </li>
-                            <li className="text-secondary/80">Madhya Pradesh, India</li>
-                            <li className="text-secondary/80">452001 (Indore)</li>
+                            <li className="pt-4 border-t border-secondary/10">
+                                <div className="flex flex-wrap gap-x-4 gap-y-2 text-sm text-secondary/60">
+                                    {[
+                                        "Indore", "Rajgarh", "Dhar", "Shujalpur", "Akodia"
+                                    ].map((city) => (
+                                        <span key={city} className="hover:text-white transition-colors cursor-default whitespace-nowrap">
+                                            {city}
+                                        </span>
+                                    ))}
+                                </div>
+                            </li>
                         </ul>
                         <div className="flex space-x-4 mt-4">
                         </div>

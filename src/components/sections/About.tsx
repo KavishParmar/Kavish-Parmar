@@ -11,6 +11,7 @@ const skills = [
     'WordPress',
     'E-commerce',
     'Animation',
+    'UGC & Video Ads',
 ];
 
 export default function About() {
@@ -23,7 +24,7 @@ export default function About() {
                         <div className="relative w-full aspect-square max-w-md mx-auto overflow-hidden rounded-2xl shadow-2xl">
                             <Image
                                 src="/profile.jpg"
-                                alt="Profile Image"
+                                alt="Kavish Parmar - Professional Web Designer & Developer"
                                 fill
                                 className="object-cover"
                                 priority
@@ -39,13 +40,10 @@ export default function About() {
 
                         <div className="space-y-4 text-lg text-primary/80">
                             <p>
-                                I'm Kavish Parmar, a passionate web designer with 5+ years of experience creating beautiful,
-                                functional websites. I specialize in modern web technologies and user-centered design.
+                                I'm Kavish Parmar, a passionate and professional web designer and developer with 5+ years of experience. I specialize in creating beautiful, functional, and modern responsive websites using React, Next.js, and cutting-edge web technologies.
                             </p>
                             <p>
-                                My mission is to help businesses establish a strong digital presence through
-                                exceptional design and development. I believe in creating websites that not only look
-                                great but also deliver results.
+                                My mission is to help businesses establish a powerful digital presence through exceptional design and development. I believe in creating results-driven solutions that combine beautiful aesthetics with exceptional performance.
                             </p>
                         </div>
 

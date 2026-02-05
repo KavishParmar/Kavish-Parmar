@@ -1,16 +1,16 @@
 'use client';
 
-import { FaDesktop, FaPalette, FaMobileAlt, FaPaintBrush, FaShoppingCart, FaTools } from 'react-icons/fa';
+import { FaDesktop, FaPalette, FaMobileAlt, FaPaintBrush, FaShoppingCart, FaTools, FaVideo, FaCheck } from 'react-icons/fa';
 
 const services = [
     {
         icon: FaDesktop,
-        title: 'Web Design',
+        title: 'Modern Web Design',
         description: 'Beautiful, modern websites that captivate your audience and drive engagement.',
     },
     {
         icon: FaPalette,
-        title: 'UI/UX Design',
+        title: 'Professional UI/UX Design',
         description: 'User-centered interfaces that drive engagement and boost conversions.',
     },
     {
@@ -19,19 +19,25 @@ const services = [
         description: 'Seamless experiences across all devices and screen sizes.',
     },
     {
-        icon: FaPaintBrush,
-        title: 'Branding & Identity',
-        description: 'Cohesive brand identities that make your business stand out.',
-    },
-    {
         icon: FaShoppingCart,
-        title: 'E-commerce Solutions',
+        title: 'Custom E-commerce Solutions',
         description: 'Powerful online stores that boost your sales and revenue.',
     },
     {
         icon: FaTools,
         title: 'Website Maintenance',
         description: 'Ongoing support to keep your site running smoothly and securely.',
+    },
+    {
+        icon: FaVideo,
+        title: 'UGC & Video Ads',
+        description: 'High-converting video ads and UGC content for your social media campaigns.',
+        features: [
+            '15-30 sec UGC style videos',
+            'Product demo videos',
+            'Instagram Reels/YouTube Shorts',
+            'Hook-optimized for ads',
+        ],
     },
 ];
 
@@ -54,7 +60,7 @@ export default function Services() {
                     {services.map((service, index) => (
                         <div
                             key={index}
-                            className="group p-8 bg-background-gray rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 cursor-pointer border border-transparent hover:border-accent/20"
+                            className="group p-8 bg-background-gray rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 cursor-pointer border border-transparent hover:border-accent/20 flex flex-col"
                         >
                             {/* Icon */}
                             <div className="text-accent text-5xl mb-6 group-hover:scale-110 group-hover:rotate-6 transition-transform duration-300">
@@ -67,9 +73,22 @@ export default function Services() {
                             </h3>
 
                             {/* Description */}
-                            <p className="text-primary/70 leading-relaxed">
+                            <p className="text-primary/70 leading-relaxed mb-4">
                                 {service.description}
                             </p>
+
+                            {/* Features for UGC/Video */}
+                            {service.features && (
+                                <ul className="space-y-2 mb-6 flex-grow">
+                                    {service.features.map((feature, fIndex) => (
+                                        <li key={fIndex} className="flex items-center gap-2 text-sm text-primary/80">
+                                            <FaCheck className="text-accent text-xs" />
+                                            {feature}
+                                        </li>
+                                    ))}
+                                </ul>
+                            )}
+
                         </div>
                     ))}
                 </div>

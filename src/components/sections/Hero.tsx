@@ -27,7 +27,7 @@ export default function Hero() {
                     </h2>
 
                     {/* Main Heading */}
-                    <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-heading font-bold text-white leading-tight">
+                    <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-heading font-bold text-white leading-tight">
                         Web Designer
                         <br />
                         <span className="bg-gradient-to-r from-accent via-accent-light to-accent bg-clip-text text-transparent">
@@ -36,7 +36,7 @@ export default function Hero() {
                     </h1>
 
                     {/* Subheading */}
-                    <p className="text-lg sm:text-xl md:text-2xl text-secondary/90 max-w-3xl mx-auto">
+                    <p className="text-lg sm:text-xl md:text-2xl text-secondary/90 max-w-2xl mx-auto">
                         Crafting digital experiences that engage and inspire
                     </p>
 
