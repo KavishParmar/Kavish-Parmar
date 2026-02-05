@@ -63,12 +63,32 @@ export default function Footer() {
                         <h4 className="text-lg font-semibold mb-4">Get In Touch</h4>
                         <ul className="space-y-2">
                             <li className="text-secondary/80">
-                                <a href="tel:+919302492158" className="hover:text-accent transition-colors font-medium">
+                                <a
+                                    href="https://wa.me/919302492158"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="hover:text-accent transition-colors font-medium cursor-pointer"
+                                    title="Click to WhatsApp, Double click to copy"
+                                    onDoubleClick={(e) => {
+                                        e.preventDefault();
+                                        navigator.clipboard.writeText('9302492158');
+                                        alert('Phone number copied to clipboard!');
+                                    }}
+                                >
                                     +91 9302492158 (WhatsApp)
                                 </a>
                             </li>
                             <li className="text-secondary/80">
-                                <a href="mailto:kavishparmar2@gmail.com" className="hover:text-accent transition-colors">
+                                <a
+                                    href="mailto:kavishparmar2@gmail.com"
+                                    className="hover:text-accent transition-colors cursor-pointer"
+                                    title="Click to Email, Double click to copy"
+                                    onDoubleClick={(e) => {
+                                        e.preventDefault();
+                                        navigator.clipboard.writeText('kavishparmar2@gmail.com');
+                                        alert('Email address copied to clipboard!');
+                                    }}
+                                >
                                     kavishparmar2@gmail.com
                                 </a>
                             </li>
