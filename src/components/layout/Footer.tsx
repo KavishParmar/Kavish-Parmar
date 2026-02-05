@@ -64,7 +64,7 @@ export default function Footer() {
                         <ul className="space-y-2">
                             <li className="text-secondary/80">
                                 <a href="tel:+919302492158" className="hover:text-accent transition-colors font-medium">
-                                    +91 9302492158
+                                    +91 9302492158 (WhatsApp)
                                 </a>
                             </li>
                             <li className="text-secondary/80">
