@@ -64,7 +64,7 @@ export default function Footer() {
                         <ul className="space-y-2">
                             <li className="text-secondary/80">
                                 <a
-                                    href="https://wa.me/919302492158"
+                                    href="https://wa.me/919302492158?text=Hello%20Kavish%2C%20I%27m%20interested%20in%20a%20website%20for%20my%20business."
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="hover:text-accent transition-colors font-medium cursor-pointer"
