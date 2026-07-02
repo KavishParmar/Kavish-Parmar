@@ -19,7 +19,7 @@ export default function Hero() {
             </div>
 
             {/* Content */}
-            <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 text-center z-10 py-20">
+            <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 text-center z-10 py-24 sm:py-20">
                 <div className="space-y-6">
                     {/* Name/Brand */}
                     <h2 className="text-xl sm:text-2xl font-medium text-secondary/80 tracking-wide">
@@ -27,7 +27,7 @@ export default function Hero() {
                     </h2>
 
                     {/* Main Heading */}
-                    <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-heading font-bold text-white leading-tight">
+                    <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-heading font-bold text-white leading-tight">
                         Web Designer
                         <br />
                         <span className="bg-gradient-to-r from-accent via-accent-light to-accent bg-clip-text text-transparent">

@@ -27,7 +27,7 @@ export default function Footer() {
                     <div>
                         <h3 className="text-2xl font-heading font-bold mb-4">Kavish Parmar</h3>
                         <p className="text-secondary/80">
-                            A passionate web designer and developer with 5+ years of experience in crafting high-performance, results-driven digital experiences. Specializing in modern web technologies and user-centered design.
+                            A passionate web designer and developer crafting high-performance, results-driven digital experiences. Specializing in modern web technologies and user-centered design.
                         </p>
                     </div>
 
@@ -91,17 +91,6 @@ export default function Footer() {
                                 >
                                     kavishparmar5@gmail.com
                                 </a>
-                            </li>
-                            <li className="pt-4 border-t border-secondary/10">
-                                <div className="flex flex-wrap gap-x-4 gap-y-2 text-sm text-secondary/60">
-                                    {[
-                                        "Indore", "Rajgarh", "Dhar", "Shujalpur", "Akodia"
-                                    ].map((city) => (
-                                        <span key={city} className="hover:text-white transition-colors cursor-default whitespace-nowrap">
-                                            {city}
-                                        </span>
-                                    ))}
-                                </div>
                             </li>
                         </ul>
                         <div className="flex space-x-4 mt-4">

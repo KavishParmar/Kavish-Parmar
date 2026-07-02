@@ -1,6 +1,6 @@
 'use client';
 
-import { FaDesktop, FaPalette, FaMobileAlt, FaPaintBrush, FaShoppingCart, FaTools, FaVideo, FaCheck } from 'react-icons/fa';
+import { FaDesktop, FaPalette, FaMobileAlt, FaShoppingCart, FaTools } from 'react-icons/fa';
 
 const services = [
     {
@@ -28,26 +28,15 @@ const services = [
         title: 'Website Maintenance',
         description: 'Ongoing support to keep your site running smoothly and securely.',
     },
-    {
-        icon: FaVideo,
-        title: 'UGC & Video Ads',
-        description: 'High-converting video ads and UGC content for your social media campaigns.',
-        features: [
-            '15-30 sec UGC style videos',
-            'Product demo videos',
-            'Instagram Reels/YouTube Shorts',
-            'Hook-optimized for ads',
-        ],
-    },
 ];
 
 export default function Services() {
     return (
-        <section id="services" className="py-20 bg-white">
+        <section id="services" className="py-16 sm:py-20 bg-white">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Section Header */}
-                <div className="text-center mb-16">
-                    <h2 className="text-4xl sm:text-5xl font-heading font-bold text-primary mb-4">
+                <div className="text-center mb-12 sm:mb-16">
+                    <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-bold text-primary mb-4">
                         Services I Offer
                     </h2>
                     <p className="text-lg text-primary/70 max-w-2xl mx-auto">
@@ -56,19 +45,19 @@ export default function Services() {
                 </div>
 
                 {/* Services Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
                     {services.map((service, index) => (
                         <div
                             key={index}
-                            className="group p-8 bg-background-gray rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 cursor-pointer border border-transparent hover:border-accent/20 flex flex-col"
+                            className="group p-6 sm:p-8 bg-background-gray rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 cursor-pointer border border-transparent hover:border-accent/20 flex flex-col"
                         >
                             {/* Icon */}
-                            <div className="text-accent text-5xl mb-6 group-hover:scale-110 group-hover:rotate-6 transition-transform duration-300">
+                            <div className="text-accent text-4xl sm:text-5xl mb-4 sm:mb-6 group-hover:scale-110 group-hover:rotate-6 transition-transform duration-300">
                                 <service.icon />
                             </div>
 
                             {/* Title */}
-                            <h3 className="text-2xl font-heading font-bold text-primary mb-4">
+                            <h3 className="text-xl sm:text-2xl font-heading font-bold text-primary mb-3 sm:mb-4">
                                 {service.title}
                             </h3>
 
@@ -76,19 +65,6 @@ export default function Services() {
                             <p className="text-primary/70 leading-relaxed mb-4">
                                 {service.description}
                             </p>
-
-                            {/* Features for UGC/Video */}
-                            {service.features && (
-                                <ul className="space-y-2 mb-6 flex-grow">
-                                    {service.features.map((feature, fIndex) => (
-                                        <li key={fIndex} className="flex items-center gap-2 text-sm text-primary/80">
-                                            <FaCheck className="text-accent text-xs" />
-                                            {feature}
-                                        </li>
-                                    ))}
-                                </ul>
-                            )}
-
                         </div>
                     ))}
                 </div>
